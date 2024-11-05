@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO LIST</title>
+</head>
+<body>
+    <button id="fetch-data" onclick="getAllData()">Get All Data</button>
+    <hr>
+    <input type="text" name="title" id="title" placeholder="Title">
+    <input type="text" name="description" id="description" placeholder="Description">
+    <button id="submit-todo" onclick="submitTodo()">Submit</button>
+
+    <input type="text" id="todo-id" placeholder="Enter Todo ID">
+    <button onclick="getTodoById()">Get Todo by ID</button>
+
+    <h1>Todo List</h1>
+    <ul id="todo-lists"></ul>
+
+    <div id="todo-detail">
+        <h2>Todo Detail</h2>
+        <p id="todo-title"></p>
+        <p id="todo-description"></p>
+        <button id="edit-todo" onclick="editTodo()">Edit</button>
+        <button id="delete-todo" onclick="deleteTodo()">Hapus</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
